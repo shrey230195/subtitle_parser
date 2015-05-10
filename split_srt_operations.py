@@ -6,6 +6,7 @@ from split_srt import srt_store_to_database
 from split_srt import start_time
 from split_srt import end_time
 from split_srt import dialogue 
+from split_srt import subs
 pos=0
 #open the srt file
 with open('ironman.srt',"r") as f:
@@ -72,6 +73,8 @@ with open('ironman.srt',"r") as f:
 		ch=raw_input()
 		if(ch=='0'):
 			exit()
+		elif(ch=='1'):
+			print_detail(subs)	
 		elif(ch=='2'):
 			print_detail(start_time)
 		elif(ch=='3'):
